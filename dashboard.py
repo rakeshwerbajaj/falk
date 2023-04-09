@@ -237,6 +237,8 @@ df_with_sentiments1 = df_master
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server = app.server
+
 auth = dash_auth.BasicAuth(app, {
     username : password
 })
